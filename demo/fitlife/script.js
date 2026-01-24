@@ -13,7 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     // Modal Logic
     const modal = document.getElementById('joinModal');
-    const closeBtn = document.querySelector('.close-modal');
+    const modalTitle = document.querySelector('.modal h2');
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
     // Select all buttons with modal-trigger class
     const triggers = document.querySelectorAll('.modal-trigger');
 

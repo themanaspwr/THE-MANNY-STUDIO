@@ -440,7 +440,17 @@ footer a {
 
     .booking-widget {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        /* Full width on mobile */
+        align-items: stretch;
+        /* Stretch inputs and button */
+        gap: 1.5rem;
+        /* More space between inputs */
+    }
+
+    .btn-search {
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .input-group {
