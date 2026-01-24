@@ -74,6 +74,14 @@ body {
     border-radius: 6px;
 }
 
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -482,9 +490,33 @@ footer {
         font-size: 2.5rem;
     }
 
+    .mobile-menu-btn {
+        display: block;
+    }
+
     .nav-container {
+        /* Keep flex row for logo and burger */
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
         flex-direction: column;
-        gap: 1rem;
+        background: var(--white);
+        padding: 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 16px 16px;
+        order: 3;
+        /* Force to bottom if in flex flow, or absolute takes it out */
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .features-grid {

@@ -30,6 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Intersection Observer for fade-in animation
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
