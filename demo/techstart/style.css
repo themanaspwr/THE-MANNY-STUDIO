@@ -18,7 +18,9 @@
     --font-main: 'Plus Jakarta Sans', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -641,6 +643,23 @@ input:checked+.slider:before {
 .full-width {
     display: flex;
     width: 100%;
+}
+
+
+.pricing-footer {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-large {
+    padding: 1rem 3rem;
+    font-size: 1.125rem;
+}
+
+.trial-note {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
 }
 
 /* Testimonials */
