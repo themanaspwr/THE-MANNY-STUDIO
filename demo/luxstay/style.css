@@ -423,6 +423,13 @@ footer a {
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 4rem;
+        /* Add space for widget at bottom */
+    }
+
     .navbar {
         padding: 1.5rem;
         flex-direction: column;
