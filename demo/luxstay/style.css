@@ -431,6 +431,11 @@ footer a {
 
     .nav-links {
         display: none;
+        /* In a real project, this would be a hamburger menu */
+    }
+
+    .booking-bar {
+        flex-direction: column;
     }
 
     .booking-widget {
