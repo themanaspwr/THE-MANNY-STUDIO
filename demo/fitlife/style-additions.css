@@ -11,14 +11,20 @@
 
 .class-card {
     background: var(--card-bg);
+    border: 1px solid #333;
+    /* Added border */
     border-left: 4px solid #333;
     padding: 2rem;
     transition: 0.3s;
     position: relative;
     overflow: hidden;
+    margin-bottom: 1rem;
+    /* Safety margin for mobile */
 }
 
 .class-card:hover {
+    border-color: var(--primary);
+    /* Highlight visuals */
     border-left-color: var(--primary);
     background: #222;
     transform: translateX(10px);
@@ -29,12 +35,18 @@
     color: var(--primary);
     font-weight: 700;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    /* Reduced from 0.5rem */
+    line-height: 1.2;
 }
 
 .class-info h3 {
-    margin-bottom: 0.5rem;
+    margin: 0;
+    /* Remove default margins */
     color: var(--text-white);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
 
 .class-meta {
@@ -45,6 +57,9 @@
     color: var(--text-gray);
     text-transform: uppercase;
     font-weight: 700;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* Separator line */
+    padding-top: 1rem;
 }
 
 /* Trainers Section */
@@ -63,6 +78,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid #333;
+    /* Added border */
 }
 
 .trainer-img {
