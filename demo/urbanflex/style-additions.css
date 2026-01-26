@@ -296,3 +296,24 @@
         text-align: left;
     }
 }
+
+/* Demo Badge */
+.demo-badge {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    z-index: 9999;
+    letter-spacing: 1px;
+    pointer-events: none;
+    /* Don't block clicks */
+}
