@@ -2,23 +2,23 @@
    DESIGN SYSTEM & CSS VARIABLES
    =================================== */
 :root {
-    /* Color Palette - Dark Charcoal & Lime Green Theme */
+    /* Color Palette - True Charcoal & Lime Green Theme */
     --primary-green: #7ED957;
     --primary-green-light: #95E372;
     --primary-green-dark: #6BC945;
 
-    --accent-charcoal: #2C3E50;
-    --accent-charcoal-light: #34495E;
-    --accent-charcoal-dark: #1A252F;
+    --accent-charcoal: #2D2D2D;
+    --accent-charcoal-light: #3D3D3D;
+    --accent-charcoal-dark: #1A1A1A;
 
-    --neutral-dark: #1E2A38;
-    --neutral-medium: #2C3E50;
+    --neutral-dark: #0A0A0A;     /* Deepest Charcoal */
+    --neutral-medium: #141414;   /* Dark Charcoal */
     --neutral-light: #F8F9FA;
     --neutral-white: #FFFFFF;
 
     --gradient-primary: linear-gradient(135deg, #7ED957 0%, #95E372 50%, #A8E88A 100%);
-    --gradient-accent: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
-    --gradient-dark: linear-gradient(135deg, #1E2A38 0%, #2C3E50 100%);
+    --gradient-accent: linear-gradient(135deg, #2D2D2D 0%, #3D3D3D 100%);
+    --gradient-dark: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
