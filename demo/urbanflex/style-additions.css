@@ -297,7 +297,79 @@
     }
 }
 
-/* Demo Badge */
+/* Reviews Marquee Section */
+.reviews-section {
+    background: #000;
+    padding: 3rem 0;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    overflow: hidden;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 1rem));
+    }
+}
+
+.review-card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    flex-shrink: 0;
+    border-left: 3px solid var(--primary);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    background: #1a1a1a;
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.review-card .stars {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.review-card p {
+    color: var(--text-white);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.review-card .reviewer {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .demo-badge {
     position: fixed;
     bottom: 20px;
